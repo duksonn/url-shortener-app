@@ -4,11 +4,11 @@ const router = express.Router();
 
 router.get('/:urlId', async (req, res) => {
     try {
-        const url = await Url.findOne({ url_id: req.params.urlId });
+        const url = await Url.findOne({ urlId: req.params.urlId });
         if (url) {
             await Url.updateOne(
                 {
-                    url_id: req.params.urlId,
+                    urlId: req.params.urlId,
                 },
                 { $inc: { clicks: 1 } }
             );
