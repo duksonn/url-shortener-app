@@ -1,0 +1,29 @@
+{
+  "name": "url-shortener-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedebarrios/url-shortener-app.git"
+  },
+  "author": "Federico Barrios Bottarelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fedebarrios/url-shortener-app/issues"
+  },
+  "homepage": "https://github.com/fedebarrios/url-shortener-app#readme",
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "mongoose": "^7.2.2",
+    "nanoid": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
