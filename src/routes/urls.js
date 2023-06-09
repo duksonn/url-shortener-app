@@ -46,10 +46,9 @@ router.get('/longener/:urlId', async (req, res) => {
 /** Delete short URL */
 router.delete('/delete/:urlId', async (req, res) => {
     const url = await Url.findOne({ urlId: req.params.urlId });
-    console.log(url)
     if (url) {
         const url = await Url.deleteOne({ urlId: req.params.urlId });
-        return res.status(204);
+        res.status(204).send();
     } else {
         res.status(404).json('Not found short URL');
     }
